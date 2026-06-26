@@ -1,6 +1,23 @@
 # Rajat Resume Portfolio
 
-Minimal animated resume portfolio for Rajat Nanavati, built with React, Vite, Framer Motion, and plain CSS.
+A minimal, monochrome, animated resume portfolio for Rajat Nanavati.
+
+Live: [rajat-resume-portfolio.vercel.app](https://rajat-resume-portfolio.vercel.app)
+
+## Overview
+
+This project presents resume content as a fast, responsive portfolio website with smooth Framer Motion transitions, clean spacing, and a focused dark interface.
+
+The codebase is intentionally modular: content, motion configuration, reusable UI, and page sections are separated so the site can be updated without touching the full app shell.
+
+## Stack
+
+- React
+- Vite
+- Framer Motion
+- Lucide React
+- Plain CSS
+- Vercel
 
 ## Structure
 
@@ -10,24 +27,40 @@ src/
   config/       Animation constants
   data/         Resume content, links, labels, and section copy
   sections/     Page sections composed from components and data
-  App.jsx       App shell and loader orchestration
-  styles.css    Theme, layout, responsive rules, and CSS animations
+  App.jsx       App shell and loader state
+  styles.css    Theme, layout, responsive rules, and visual effects
 ```
 
-## Scripts
+## Local Development
 
 ```sh
+npm install
 npm run dev
+```
+
+Build for production:
+
+```sh
 npm run build
+```
+
+Preview production output:
+
+```sh
 npm run preview
 ```
 
+## CI/CD
+
+CI/CD is implemented for this project.
+
+- GitHub Actions runs install, high-severity audit, and production build checks on `main`.
+- Vercel is connected to the GitHub repository.
+- Every push to `main` automatically deploys the latest production version.
+
 ## Deployment
 
-This project is ready for Vercel.
-
+- Platform: Vercel
 - Framework: Vite
 - Build command: `npm run build`
 - Output directory: `dist`
-
-The GitHub Actions workflow runs `npm ci`, `npm audit --audit-level=high`, and `npm run build` on pushes and pull requests to `main`.

@@ -64,8 +64,10 @@ export const aboutContent = {
 export const heroContent = {
   roleLabel: "React Native Developer",
   locationLabel: "Ahmedabad",
-  resumeRepo: "rajat_258 / mobile-resume",
+  resumeRepo: "rajat258 / rajat-resume-portfolio",
   repoVisibility: "public",
+  photo: "/rajat-profile.jpg",
+  photoAlt: "Rajat Nanavati",
   cardCopy: "Profile README for a React Native engineer shipping mobile systems.",
   downloadLabel: "Download Resume",
   contactLabel: "Contact Me",
@@ -178,6 +180,13 @@ export const projects = [
     meta: "React Native Testing Platform / Personal Project",
     description:
       "Built a React Native testing application for validating custom modules, native integrations, reusable mobile components, and device compatibility.",
+  },
+  {
+    title: "rajat-resume-portfolio",
+    href: "https://github.com/rajat258/rajat-resume-portfolio",
+    meta: "React / Vite / Framer Motion / CI-CD",
+    description:
+      "Built a minimal animated resume portfolio with modular React components, separated content configuration, Vercel deployment, and GitHub-based CI/CD workflows. Live at rajat-resume-portfolio.vercel.app.",
   },
 ];
 

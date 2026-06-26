@@ -6,7 +6,8 @@ Phone: +91 9428190380
 Email: [rajatnanavati258@gmail.com](mailto:rajatnanavati258@gmail.com)  
 LinkedIn: [linkedin.com/in/rajat-nanavati](https://www.linkedin.com/in/rajat-nanavati-57446b209)  
 GitHub: [github.com/rajat258](https://github.com/rajat258)  
-Medium: [medium.com/@rajatnanavati258](https://medium.com/@rajatnanavati258)
+Medium: [medium.com/@rajatnanavati258](https://medium.com/@rajatnanavati258)<br>
+Portfolio: [rajat-resume-portfolio.vercel.app](https://rajat-resume-portfolio.vercel.app)
 
 ## Summary
 
@@ -95,7 +96,7 @@ Prototype
 - Built investment tracking and analytics workflows for creators and brands using React Native.
 - Developed interactive dashboards, dynamic charts, and profile analytics for financial trend visualization.
 
-### [rn-MovieDB](https://github.com/rajat258/mita)
+### [rn-MovieDB](https://github.com/rajat258/rn-movieDB)
 
 React Native, Firebase  
 Personal Project
@@ -104,7 +105,7 @@ Personal Project
 - Integrated movie ratings, trailers, authentication workflows, and dynamic chat functionality using Firebase.
 - Implemented responsive UI components and real-time user interaction features to enhance engagement.
 
-### rn-groot
+### [rn-groot](https://github.com/rajat258/rn-groot)
 
 React Native Testing Platform  
 Personal Project
@@ -112,6 +113,16 @@ Personal Project
 - Built a React Native testing application for validating custom modules, libraries, and mobile features across Android and iOS platforms.
 - Used the platform to experiment with device compatibility, native integrations, and reusable mobile components.
 - Improved debugging and testing workflows for multiple mobile development scenarios and edge cases.
+
+### [rajat-resume-portfolio](https://github.com/rajat258/rajat-resume-portfolio)
+
+React, Vite, Framer Motion<br>
+Personal Project
+
+- Built a minimal animated resume portfolio with modular React components and separated content configuration.
+- Implemented smooth motion, responsive layout, and a professional monochrome interface using Framer Motion and plain CSS.
+- Set up GitHub Actions checks and Vercel auto-deployment for CI/CD.
+- Live: [rajat-resume-portfolio.vercel.app](https://rajat-resume-portfolio.vercel.app)
 
 ## Certifications
 

@@ -35,7 +35,9 @@ export function Hero({ ready }) {
           <span>{heroContent.resumeRepo}</span>
           <span>{heroContent.repoVisibility}</span>
         </div>
-        <div className="initials-mark">RN</div>
+        <div className="profile-photo-frame">
+          <img src={heroContent.photo} alt={heroContent.photoAlt} />
+        </div>
         <ContributionGraph ready={ready} />
         <p>{heroContent.cardCopy}</p>
         <div className="stats-grid">

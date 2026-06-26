@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ease } from "../config/animations";
 
 export function TypewriterLoader({ onDone }) {
-  const command = "npx react-native init RajatPortfolio...";
+  const command = "npx react-native init rajat-resume...";
   const [text, setText] = useState("");
   const [exiting, setExiting] = useState(false);
 
