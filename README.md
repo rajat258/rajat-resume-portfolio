@@ -18,6 +18,8 @@ The codebase is intentionally modular: content, motion configuration, reusable U
 - Lucide React
 - Plain CSS
 - Vercel
+- Vercel Web Analytics
+- Vercel Speed Insights
 
 ## Structure
 
@@ -57,6 +59,11 @@ CI/CD is implemented for this project.
 - GitHub Actions runs install, high-severity audit, and production build checks on `main`.
 - Vercel is connected to the GitHub repository.
 - Every push to `main` automatically deploys the latest production version.
+
+## Observability
+
+- Vercel Web Analytics tracks page views, visitors, referrers, and device/browser data.
+- Vercel Speed Insights tracks real-user performance metrics after deployment.
 
 ## Deployment
 

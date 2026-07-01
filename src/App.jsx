@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { AmbientBackground } from "./components/AmbientBackground";
 import { Navigation } from "./components/Navigation";
 import { ScrollProgress } from "./components/ScrollProgress";
@@ -45,6 +47,8 @@ export default function App() {
           <Contact ready={introReady} />
         </main>
       </div>
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }
