@@ -11,7 +11,7 @@ Portfolio: [rajatnanavati.vercel.app](https://rajatnanavati.vercel.app)
 
 ## Summary
 
-Results-driven React Native Developer with 3+ years of experience building scalable cross-platform mobile applications across healthcare, retail, HRTech, and creator economy domains. Strong expertise in React Native architecture, Redux ecosystem, mobile performance optimization, and API integrations. Proven ability to deliver production-ready applications with modern UI/UX, real-time workflows, and scalable SaaS solutions. Experienced collaborating with cross-functional teams and delivering high-quality mobile products for global clients.
+Results-driven React Native Developer with 3.5+ years of experience building scalable cross-platform mobile applications across healthcare, retail, HRTech, and creator economy domains. Strong expertise in React Native architecture, Redux ecosystem, mobile performance optimization, and API integrations. Proven ability to deliver production-ready applications with modern UI/UX, real-time workflows, and scalable SaaS solutions. Experienced collaborating with cross-functional teams and delivering high-quality mobile products for global clients.
 
 ## Technical Skills
 

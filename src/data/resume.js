@@ -16,7 +16,7 @@ export const profile = {
   headline:
     "README.md - building scalable cross-platform apps for healthcare, retail, HRTech, and creator platforms.",
   summary:
-    "Results-driven React Native Developer with 3+ years of experience building scalable cross-platform mobile applications across healthcare, retail, HRTech, and creator economy domains. Strong expertise in React Native architecture, Redux ecosystem, mobile performance optimization, and API integrations.",
+    "Results-driven React Native Developer with 3.5+ years of experience building scalable cross-platform mobile applications across healthcare, retail, HRTech, and creator economy domains. Strong expertise in React Native architecture, Redux ecosystem, mobile performance optimization, and API integrations.",
 };
 
 export const navItems = [
@@ -75,7 +75,7 @@ export const heroContent = {
 };
 
 export const stats = [
-  { value: "3+", label: "Years" },
+  { value: "3.5+", label: "Years" },
   { value: "4", label: "Domains" },
   { value: "AWS", label: "Certified" },
 ];
