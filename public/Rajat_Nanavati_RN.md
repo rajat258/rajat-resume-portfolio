@@ -7,7 +7,7 @@ Email: [rajatnanavati258@gmail.com](mailto:rajatnanavati258@gmail.com)
 LinkedIn: [linkedin.com/in/rajat-nanavati](https://www.linkedin.com/in/rajat-nanavati-57446b209)  
 GitHub: [github.com/rajat258](https://github.com/rajat258)  
 Medium: [medium.com/@rajatnanavati258](https://medium.com/@rajatnanavati258)<br>
-Portfolio: [rajat-resume-portfolio.vercel.app](https://rajat-resume-portfolio.vercel.app)
+Portfolio: [rajatnanavati.vercel.app](https://rajatnanavati.vercel.app)
 
 ## Summary
 
@@ -114,15 +114,15 @@ Personal Project
 - Used the platform to experiment with device compatibility, native integrations, and reusable mobile components.
 - Improved debugging and testing workflows for multiple mobile development scenarios and edge cases.
 
-### [rajat-resume-portfolio](https://github.com/rajat258/rajat-resume-portfolio)
+### [Rajat Nanavati Portfolio](https://github.com/rajat258/rajat-resume-portfolio)
 
 React, Vite, Framer Motion<br>
 Personal Project
 
-- Built a minimal animated resume portfolio with modular React components and separated content configuration.
+- Built a minimal animated portfolio with modular React components and separated content configuration.
 - Implemented smooth motion, responsive layout, and a professional monochrome interface using Framer Motion and plain CSS.
 - Set up GitHub Actions checks and Vercel auto-deployment for CI/CD.
-- Live: [rajat-resume-portfolio.vercel.app](https://rajat-resume-portfolio.vercel.app)
+- Live: [rajatnanavati.vercel.app](https://rajatnanavati.vercel.app)
 
 ## Certifications
 

@@ -1,12 +1,12 @@
-# Rajat Resume Portfolio
+# Rajat Nanavati Portfolio
 
-A minimal, monochrome, animated resume portfolio for Rajat Nanavati.
+A minimal, monochrome, animated portfolio for Rajat Nanavati.
 
-Live: [rajat-resume-portfolio.vercel.app](https://rajat-resume-portfolio.vercel.app)
+Live: [rajatnanavati.vercel.app](https://rajatnanavati.vercel.app)
 
 ## Overview
 
-This project presents resume content as a fast, responsive portfolio website with smooth Framer Motion transitions, clean spacing, and a focused dark interface.
+This project presents professional profile, work, projects, and contact content as a fast, responsive portfolio website with smooth Framer Motion transitions, clean spacing, and a focused dark interface.
 
 The codebase is intentionally modular: content, motion configuration, reusable UI, and page sections are separated so the site can be updated without touching the full app shell.
 
@@ -27,7 +27,7 @@ The codebase is intentionally modular: content, motion configuration, reusable U
 src/
   components/   Reusable UI and motion primitives
   config/       Animation constants
-  data/         Resume content, links, labels, and section copy
+  data/         Profile content, links, labels, and section copy
   sections/     Page sections composed from components and data
   App.jsx       App shell and loader state
   styles.css    Theme, layout, responsive rules, and visual effects

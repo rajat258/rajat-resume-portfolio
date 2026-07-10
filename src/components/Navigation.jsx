@@ -11,7 +11,7 @@ export function Navigation({ ready }) {
       transition={{ duration: 0.72, ease }}
     >
       <a className="brand" href="#hero">
-        {profile.handle} / resume
+        {profile.handle} / portfolio
       </a>
       <nav className="nav-links" aria-label="Primary navigation">
         {navItems.map((item) => (

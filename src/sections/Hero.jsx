@@ -32,7 +32,7 @@ export function Hero({ ready }) {
 
       <Reveal className="rn-card" delay={0.12} ready={ready} variant="scale" amount={0.1} eager>
         <div className="repo-top">
-          <span>{heroContent.resumeRepo}</span>
+          <span>{heroContent.portfolioRepo}</span>
           <span>{heroContent.repoVisibility}</span>
         </div>
         <div className="profile-photo-frame">
