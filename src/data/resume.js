@@ -106,7 +106,6 @@ export const skillGroups = [
 export const experience = [
   {
     company: "Salinger and Dalley Holdings",
-    href: "https://www.salingerandalley.com/",
     period: "Present",
     role: "Technical Consultant",
     location: "Remote",
