@@ -147,9 +147,9 @@ export const projects = [
   {
     title: "CarePorch",
     href: "https://careporch.org/",
-    meta: "Healthcare Platform / SaaS / Ongoing",
+    meta: "React Native / Expo / Caregiving Platform / Ongoing",
     description:
-      "Building comprehensive healthcare solutions focused on patient outcomes and operational efficiency. Developing scalable, user-centered digital health initiatives with modern architecture and best practices.",
+      "Caregiver support app pairing a private, moderated community with private visit scheduling, built with React Native and Expo for iOS, Android, and Web. Contributed real-time messaging via Stream Chat and a Visits module with two-way Google Calendar integration.",
   },
   {
     title: "POPProbe",
