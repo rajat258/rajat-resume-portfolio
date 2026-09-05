@@ -105,6 +105,19 @@ export const skillGroups = [
 
 export const experience = [
   {
+    company: "Salinger and Dalley Holdings",
+    href: "https://www.salingerandalley.com/",
+    period: "Present",
+    role: "Technical Consultant",
+    location: "Remote",
+    bullets: [
+      "Architecting and developing healthcare solutions to improve patient outcomes and operational efficiency.",
+      "Leading technical strategy for digital health initiatives and cross-platform mobile applications.",
+      "Collaborating with healthcare stakeholders to build scalable, user-centered products.",
+      "Driving innovation in healthcare technology with modern architecture and best practices.",
+    ],
+  },
+  {
     company: "Way to React Technologies",
     href: "https://waytoreact.com/",
     period: "2023 - Present",
@@ -132,6 +145,13 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: "CarePorch",
+    href: "https://careporch.org/",
+    meta: "Healthcare Platform / SaaS / Ongoing",
+    description:
+      "Building comprehensive healthcare solutions focused on patient outcomes and operational efficiency. Developing scalable, user-centered digital health initiatives with modern architecture and best practices.",
+  },
   {
     title: "POPProbe",
     href: "https://www.popprobe.com/",
