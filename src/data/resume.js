@@ -107,13 +107,13 @@ export const experience = [
   {
     company: "Salinger and Dalley Holdings",
     period: "Present",
-    role: "Technical Consultant",
-    location: "Remote",
+    role: "React Native Developer",
+    location: "Remote (USA)",
     bullets: [
-      "Architecting and developing healthcare solutions to improve patient outcomes and operational efficiency.",
-      "Leading technical strategy for digital health initiatives and cross-platform mobile applications.",
-      "Collaborating with healthcare stakeholders to build scalable, user-centered products.",
-      "Driving innovation in healthcare technology with modern architecture and best practices.",
+      "Built the real-time community messaging experience for CarePorch, a caregiver support platform, using React Native, Expo, and Stream Chat, with group channels, direct messages, threaded and quoted replies, swipe-to-reply gestures, and video compression before upload.",
+      "Developed the Visits scheduling module end to end, covering recurring availability rules, the booking, rescheduling, and cancellation lifecycle, and two-way Google Calendar integration with conflict detection.",
+      "Shipped features across iOS, Android, and Web from a single Expo codebase, delivering authentication, onboarding, and settings flows alongside shared components and hooks used throughout the app.",
+      "Maintained quality through Vitest unit and integration tests, Playwright end-to-end and visual regression suites, and Maestro native regression flows running in GitHub Actions CI.",
     ],
   },
   {
