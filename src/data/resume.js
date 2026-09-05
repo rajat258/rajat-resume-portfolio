@@ -119,7 +119,7 @@ export const experience = [
   {
     company: "Way to React Technologies",
     href: "https://waytoreact.com/",
-    period: "2023 - Present",
+    period: "2023 - 2026",
     role: "React Native Developer",
     location: "Ahmedabad, India",
     bullets: [
