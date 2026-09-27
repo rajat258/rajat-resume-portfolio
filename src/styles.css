@@ -897,6 +897,35 @@ h3 {
   background: var(--green);
 }
 
+.project-group + .project-group {
+  margin-top: 34px;
+}
+
+.project-group-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.project-group-head h3 {
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.project-group-head span {
+  display: grid;
+  place-items: center;
+  min-width: 24px;
+  height: 22px;
+  padding: 0 7px;
+  border: 1px solid rgba(48, 54, 61, 0.8);
+  border-radius: 999px;
+  color: var(--muted);
+  background: #0d1117;
+  font-size: 0.75rem;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

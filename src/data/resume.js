@@ -31,7 +31,7 @@ export const sectionMeta = {
   skills: {
     kicker: "Languages & Tools",
     title: "Pinned skill repositories",
-    copy: "A compact map of the stack used across production mobile apps.",
+    copy: "A compact map of the stack used across production mobile and web apps.",
   },
   work: {
     kicker: "Professional log",
@@ -41,7 +41,7 @@ export const sectionMeta = {
   projects: {
     kicker: "Open source & client work",
     title: "Featured projects",
-    copy: "Mobile-first products, internal workflows, and reusable React Native foundations.",
+    copy: "Production mobile apps and live websites, grouped by platform.",
   },
   credentials: {
     kicker: "Credentials",
@@ -83,23 +83,62 @@ export const stats = [
 export const skillGroups = [
   {
     title: "Mobile Development",
+    icon: "code",
     items: ["React Native", "TypeScript", "JavaScript", "Android", "iOS"],
   },
   {
     title: "Frontend Architecture",
-    items: ["React Hooks", "Redux", "Redux Toolkit", "Redux Thunk", "Redux Saga"],
+    icon: "briefcase",
+    items: [
+      "React",
+      "React Hooks",
+      "Redux",
+      "Redux Toolkit",
+      "Redux Thunk",
+      "Redux Saga",
+      "React Router",
+      "Vite",
+      "Framer Motion",
+    ],
   },
   {
     title: "Backend & Cloud",
-    items: ["AWS", "REST APIs", "Firebase", "Realtime workflows"],
+    icon: "cloud",
+    items: ["AWS", "REST APIs", "Firebase", "Realtime workflows", "Vercel", "GitHub Pages"],
   },
   {
     title: "Tools",
-    items: ["Git", "GitHub", "SourceTree", "Android Studio", "Xcode", "VS Code", "Flipper"],
+    icon: "terminal",
+    items: [
+      "Git",
+      "GitHub",
+      "GitHub Actions",
+      "SourceTree",
+      "Android Studio",
+      "Xcode",
+      "VS Code",
+      "Flipper",
+    ],
   },
   {
     title: "Programming",
-    items: ["Python", "C", "C++", "HTML", "CSS", "NumPy", "Pandas"],
+    icon: "terminal",
+    items: ["Python", "C", "C++", "HTML", "CSS", "CSS Modules", "NumPy", "Pandas"],
+  },
+  {
+    title: "AI Tools",
+    icon: "sparkles",
+    items: [
+      "Claude",
+      "Claude Code",
+      "ChatGPT",
+      "Codex",
+      "Cursor",
+      "GitHub Copilot",
+      "Gemini",
+      "Antigravity",
+      "Muse",
+    ],
   },
 ];
 
@@ -143,69 +182,86 @@ export const experience = [
   },
 ];
 
-export const projects = [
+export const projectGroups = [
   {
-    title: "CarePorch",
-    href: "https://careporch.org/",
-    meta: "React Native / Expo / Caregiving Platform / Ongoing",
-    description:
-      "Caregiver support app pairing a private, moderated community with private visit scheduling, built with React Native and Expo for iOS, Android, and Web. Contributed real-time messaging via Stream Chat and a Visits module with two-way Google Calendar integration.",
+    title: "App projects",
+    items: [
+      {
+        title: "CarePorch",
+        href: "https://careporch.org/",
+        meta: "React Native / Expo / Caregiving Platform / Ongoing",
+        description:
+          "Caregiver support app pairing a private, moderated community with private visit scheduling, built with React Native and Expo for iOS, Android, and Web. Contributed real-time messaging via Stream Chat and a Visits module with two-way Google Calendar integration.",
+      },
+      {
+        title: "POPProbe",
+        href: "https://www.popprobe.com/",
+        meta: "React Native / SaaS Platform / Ongoing",
+        description:
+          "Built enterprise retail execution mobile workflows for brands operating across 3+ continents, with scalable mobile modules for retail tracking, operational reporting, and field-force management.",
+      },
+      {
+        title: "Glip",
+        href: "https://github.com/rajat258/glip-mobile",
+        meta: "React Native / Healthcare / 2026",
+        description:
+          "Built healthcare-focused medication tracking for treatment cycles, dynamic forecasting, user insights, real-time cycle management, and predictive reminders.",
+      },
+      {
+        title: "AttLed",
+        href: "https://attled.com/",
+        meta: "React Native / HRTech / 2024-25",
+        description:
+          "Developed employee management, attendance tracking, payroll, branch organization, responsive UI, and optimized operational workflows.",
+      },
+      {
+        title: "Sandwych",
+        href: "https://sandwych.com/",
+        meta: "Healthcare Platform / 2025",
+        description:
+          "Developed patient-centered care coordination, patient navigation, task tracking, reminders, and collaboration modules for healthcare teams.",
+      },
+      {
+        title: "Mita",
+        href: "https://github.com/rajat258/mita",
+        meta: "Creator Economy Platform / Prototype",
+        description:
+          "Built investment tracking and analytics workflows for creators and brands using React Native, interactive dashboards, dynamic charts, and profile analytics.",
+      },
+      {
+        title: "rn-MovieDB",
+        href: "https://github.com/rajat258/rn-movieDB",
+        meta: "React Native / Firebase / Personal Project",
+        description:
+          "Developed a cross-platform movie and TV discovery application with ratings, trailers, authentication workflows, and dynamic chat functionality using Firebase.",
+      },
+      {
+        title: "rn-groot",
+        href: "https://github.com/rajat258/rn-groot",
+        meta: "React Native Testing Platform / Personal Project",
+        description:
+          "Built a React Native testing application for validating custom modules, native integrations, reusable mobile components, and device compatibility.",
+      },
+    ],
   },
   {
-    title: "POPProbe",
-    href: "https://www.popprobe.com/",
-    meta: "React Native / SaaS Platform / Ongoing",
-    description:
-      "Built enterprise retail execution mobile workflows for brands operating across 3+ continents, with scalable mobile modules for retail tracking, operational reporting, and field-force management.",
-  },
-  {
-    title: "Glip",
-    href: "https://github.com/rajat258/glip-mobile",
-    meta: "React Native / Healthcare / 2026",
-    description:
-      "Built healthcare-focused medication tracking for treatment cycles, dynamic forecasting, user insights, real-time cycle management, and predictive reminders.",
-  },
-  {
-    title: "AttLed",
-    href: "https://attled.com/",
-    meta: "React Native / HRTech / 2024-25",
-    description:
-      "Developed employee management, attendance tracking, payroll, branch organization, responsive UI, and optimized operational workflows.",
-  },
-  {
-    title: "Sandwych",
-    href: "https://sandwych.com/",
-    meta: "Healthcare Platform / 2025",
-    description:
-      "Developed patient-centered care coordination, patient navigation, task tracking, reminders, and collaboration modules for healthcare teams.",
-  },
-  {
-    title: "Mita",
-    href: "https://github.com/rajat258/mita",
-    meta: "Creator Economy Platform / Prototype",
-    description:
-      "Built investment tracking and analytics workflows for creators and brands using React Native, interactive dashboards, dynamic charts, and profile analytics.",
-  },
-  {
-    title: "rn-MovieDB",
-    href: "https://github.com/rajat258/rn-movieDB",
-    meta: "React Native / Firebase / Personal Project",
-    description:
-      "Developed a cross-platform movie and TV discovery application with ratings, trailers, authentication workflows, and dynamic chat functionality using Firebase.",
-  },
-  {
-    title: "rn-groot",
-    href: "https://github.com/rajat258/rn-groot",
-    meta: "React Native Testing Platform / Personal Project",
-    description:
-      "Built a React Native testing application for validating custom modules, native integrations, reusable mobile components, and device compatibility.",
-  },
-  {
-    title: "Rajat Nanavati Portfolio",
-    href: "https://github.com/rajat258/rajat-resume-portfolio",
-    meta: "React / Vite / Framer Motion / CI-CD",
-    description:
-      "Built a minimal animated portfolio with modular React components, separated content configuration, Vercel deployment, and GitHub-based CI/CD workflows. Live at rajatnanavati.vercel.app.",
+    title: "Web projects",
+    items: [
+      {
+        title: "ATC Group Website",
+        href: "https://akshaytradingco.in/",
+        meta: "React / TypeScript / Vite / GitHub Pages",
+        description:
+          "Built the marketing site for ATC Group, an Ahmedabad FIBC and industrial packaging manufacturer, with a token based design system, CSS Modules, content driven product catalogue, responsive layout checks, and GitHub Actions deployment to a custom domain.",
+      },
+      {
+        title: "Rajat Nanavati Portfolio",
+        href: "https://github.com/rajat258/rajat-resume-portfolio",
+        meta: "React / Vite / Framer Motion / CI-CD",
+        description:
+          "Built a minimal animated portfolio with modular React components, separated content configuration, Vercel deployment, and GitHub-based CI/CD workflows. Live at rajatnanavati.vercel.app.",
+      },
+    ],
   },
 ];
 
