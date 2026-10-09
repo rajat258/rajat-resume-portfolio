@@ -74,6 +74,33 @@ export const heroContent = {
   projectsLabel: "View Projects",
 };
 
+export const nanoContent = {
+  name: "Nano",
+  label: "Nano, Rajat's mascot",
+  companionLabel: "Nano, Rajat's mascot. Say hi and jump to contact",
+  sleepAfterMs: 25000,
+  sections: [
+    { id: "hero", mood: "idle" },
+    { id: "about", mood: "listening", line: "Hey, that's Rajat. Glad you're here." },
+    { id: "skills", mood: "thinking", line: "Hmm, which stack fits your idea?" },
+    { id: "work", mood: "working", line: "Heads down, shipping production apps." },
+    { id: "projects", mood: "excited", line: "Ooh, these are my favourites!" },
+    { id: "credentials", mood: "proud", line: "AWS certified. Small flex." },
+    { id: "contact", mood: "happy", line: "Say hi! Rajat replies fast." },
+  ],
+  hoverLine: "Psst, click me.",
+  wakeLine: "Oh! I'm up, I'm up.",
+  sleepLine: "Zzz...",
+  celebrateLine: "Let's build something together!",
+  credit: {
+    label: "Nano is built with Bible Strong Avatar Lab",
+    href: "https://github.com/smontlouis/bible-strong-avatar-lab",
+    licenseLabel: "AGPL-3.0",
+    sourceLabel: "View source",
+    sourceHref: "https://github.com/rajat258/rajat-resume-portfolio",
+  },
+};
+
 export const stats = [
   { value: "3.5+", label: "Years" },
   { value: "4", label: "Domains" },

@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail, Phone, Terminal } from "lucide-react";
 import { ContactLink } from "../components/ContactLink";
 import { Reveal } from "../components/Reveal";
-import { profile, sectionMeta } from "../data/resume";
+import { nanoContent, profile, sectionMeta } from "../data/resume";
 
 export function Contact({ ready }) {
   return (
@@ -17,6 +17,17 @@ export function Contact({ ready }) {
           <ContactLink icon={<Terminal size={18} />} href={profile.mediumHref} label={profile.medium} />
         </div>
       </Reveal>
+      <p className="site-credit">
+        <a href={nanoContent.credit.href} target="_blank" rel="noreferrer">
+          {nanoContent.credit.label}
+        </a>
+        <span aria-hidden="true">/</span>
+        <span>{nanoContent.credit.licenseLabel}</span>
+        <span aria-hidden="true">/</span>
+        <a href={nanoContent.credit.sourceHref} target="_blank" rel="noreferrer">
+          {nanoContent.credit.sourceLabel}
+        </a>
+      </p>
     </section>
   );
 }

@@ -1,7 +1,31 @@
+import { lazy, Suspense, useState } from "react";
 import { Download, Mail } from "lucide-react";
 import { ContributionGraph } from "../components/ContributionGraph";
 import { Reveal } from "../components/Reveal";
-import { heroContent, profile, stats } from "../data/resume";
+import { heroContent, nanoContent, profile, stats } from "../data/resume";
+
+const NanoAvatar = lazy(() => import("../components/NanoAvatar"));
+
+function NanoBadge({ ready }) {
+  const [mood, setMood] = useState("idle");
+
+  return (
+    <button
+      type="button"
+      className={`nano-badge${ready ? " is-ready" : ""}`}
+      aria-label={nanoContent.label}
+      onPointerEnter={(event) => event.pointerType === "mouse" && mood === "idle" && setMood("curious")}
+      onPointerLeave={() => mood === "curious" && setMood("idle")}
+      onClick={() => setMood("celebrate")}
+    >
+      {ready && (
+        <Suspense fallback={null}>
+          <NanoAvatar mood={mood} size="100%" label={nanoContent.label} onAnimationEnd={() => setMood("idle")} />
+        </Suspense>
+      )}
+    </button>
+  );
+}
 
 export function Hero({ ready }) {
   return (
@@ -35,8 +59,11 @@ export function Hero({ ready }) {
           <span>{heroContent.portfolioRepo}</span>
           <span>{heroContent.repoVisibility}</span>
         </div>
-        <div className="profile-photo-frame">
-          <img src={heroContent.photo} alt={heroContent.photoAlt} />
+        <div className="profile-photo-wrap">
+          <div className="profile-photo-frame">
+            <img src={heroContent.photo} alt={heroContent.photoAlt} />
+          </div>
+          <NanoBadge ready={ready} />
         </div>
         <ContributionGraph ready={ready} />
         <p>{heroContent.cardCopy}</p>

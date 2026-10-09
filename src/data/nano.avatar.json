@@ -1,0 +1,1071 @@
+{
+  "schema": "bible-strong/avatar-definition",
+  "schemaVersion": 1,
+  "name": "Nano",
+  "body": {
+    "primary": {
+      "type": "cube",
+      "width": 236,
+      "height": 228,
+      "depth": 210,
+      "roundness": 1
+    },
+    "nodes": []
+  },
+  "colors": {
+    "body": "#58a6ff",
+    "eyes": "#0d1117"
+  },
+  "expressions": {
+    "neutral": {
+      "head": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "eyes": {
+        "left": {
+          "width": 22,
+          "height": 52,
+          "x": 0,
+          "y": -6,
+          "angle": 0
+        },
+        "right": {
+          "width": 22,
+          "height": 52,
+          "x": 0,
+          "y": -6,
+          "angle": 0
+        },
+        "spacing": 40
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "look-up": {
+      "head": {
+        "x": 7,
+        "y": 24,
+        "z": -12
+      },
+      "eyes": {
+        "left": {
+          "width": 23,
+          "height": 44,
+          "x": 0,
+          "y": -18,
+          "angle": 0
+        },
+        "right": {
+          "width": 23,
+          "height": 44,
+          "x": 0,
+          "y": -18,
+          "angle": 0
+        },
+        "spacing": 52
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "look-around": {
+      "head": {
+        "x": 0,
+        "y": 30,
+        "z": -9
+      },
+      "eyes": {
+        "left": {
+          "width": 23,
+          "height": 42,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 23,
+          "height": 42,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 52
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "attentive": {
+      "head": {
+        "x": 2,
+        "y": 6,
+        "z": 10
+      },
+      "eyes": {
+        "left": {
+          "width": 24,
+          "height": 56,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 24,
+          "height": 56,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 54
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "reading": {
+      "head": {
+        "x": -14,
+        "y": 2,
+        "z": -12
+      },
+      "eyes": {
+        "left": {
+          "width": 23,
+          "height": 50,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 23,
+          "height": 50,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 54
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "microSaccades",
+        "body": "none"
+      }
+    },
+    "soft-down": {
+      "head": {
+        "x": -6,
+        "y": -10,
+        "z": -12
+      },
+      "eyes": {
+        "left": {
+          "width": 23,
+          "height": 56,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 23,
+          "height": 56,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 54
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "curious": {
+      "head": {
+        "x": -11,
+        "y": -16,
+        "z": 6
+      },
+      "eyes": {
+        "left": {
+          "width": 21,
+          "height": 47,
+          "x": 0,
+          "y": 0,
+          "angle": 20
+        },
+        "right": {
+          "width": 21,
+          "height": 47,
+          "x": 0,
+          "y": 0,
+          "angle": -20
+        },
+        "spacing": 54
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "thinking-left": {
+      "head": {
+        "x": 8,
+        "y": -20,
+        "z": 8
+      },
+      "eyes": {
+        "left": {
+          "width": 23,
+          "height": 52,
+          "x": 0,
+          "y": -10,
+          "angle": 0
+        },
+        "right": {
+          "width": 44,
+          "height": 14,
+          "x": 0,
+          "y": -14,
+          "angle": 0
+        },
+        "spacing": 58
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      },
+      "colors": {
+        "body": "#a371f7"
+      }
+    },
+    "thinking-up": {
+      "head": {
+        "x": 9,
+        "y": 22,
+        "z": -14
+      },
+      "eyes": {
+        "left": {
+          "width": 22,
+          "height": 44,
+          "x": 0,
+          "y": -20,
+          "angle": 0
+        },
+        "right": {
+          "width": 22,
+          "height": 44,
+          "x": 0,
+          "y": -20,
+          "angle": 0
+        },
+        "spacing": 52
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      },
+      "colors": {
+        "body": "#a371f7"
+      }
+    },
+    "thinking-side": {
+      "head": {
+        "x": -10,
+        "y": -14,
+        "z": 6
+      },
+      "eyes": {
+        "left": {
+          "width": 21,
+          "height": 46,
+          "x": 0,
+          "y": 0,
+          "angle": 18
+        },
+        "right": {
+          "width": 21,
+          "height": 46,
+          "x": 0,
+          "y": 0,
+          "angle": -18
+        },
+        "spacing": 54
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      },
+      "colors": {
+        "body": "#a371f7"
+      }
+    },
+    "focused": {
+      "head": {
+        "x": -10,
+        "y": 4,
+        "z": -6
+      },
+      "eyes": {
+        "left": {
+          "width": 25,
+          "height": 40,
+          "x": 0,
+          "y": 0,
+          "angle": -14
+        },
+        "right": {
+          "width": 25,
+          "height": 40,
+          "x": 0,
+          "y": 0,
+          "angle": 14
+        },
+        "spacing": 54
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "microSaccades",
+        "body": "slowDrift"
+      }
+    },
+    "focused-right": {
+      "head": {
+        "x": -8,
+        "y": 16,
+        "z": -4
+      },
+      "eyes": {
+        "left": {
+          "width": 24,
+          "height": 40,
+          "x": 0,
+          "y": 0,
+          "angle": -12
+        },
+        "right": {
+          "width": 24,
+          "height": 40,
+          "x": 0,
+          "y": 0,
+          "angle": 12
+        },
+        "spacing": 54
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "microSaccades",
+        "body": "slowDrift"
+      }
+    },
+    "joyful": {
+      "head": {
+        "x": -2,
+        "y": -14,
+        "z": -12
+      },
+      "eyes": {
+        "left": {
+          "width": 32,
+          "height": 78,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 32,
+          "height": 76,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 60
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "joyful-tilt": {
+      "head": {
+        "x": -14,
+        "y": 14,
+        "z": 12
+      },
+      "eyes": {
+        "left": {
+          "width": 30,
+          "height": 72,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 30,
+          "height": 72,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 62
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "playful": {
+      "head": {
+        "x": -4,
+        "y": 14,
+        "z": -14
+      },
+      "eyes": {
+        "left": {
+          "width": 20,
+          "height": 44,
+          "x": 0,
+          "y": 0,
+          "angle": 24
+        },
+        "right": {
+          "width": 20,
+          "height": 44,
+          "x": 0,
+          "y": 0,
+          "angle": -18
+        },
+        "spacing": 52
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "surprised": {
+      "head": {
+        "x": -5,
+        "y": -12,
+        "z": -12
+      },
+      "eyes": {
+        "left": {
+          "width": 48,
+          "height": 48,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 47,
+          "height": 47,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 68
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "smile": {
+      "head": {
+        "x": -8,
+        "y": -8,
+        "z": -10
+      },
+      "eyes": {
+        "left": {
+          "width": 52,
+          "height": 15,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 52,
+          "height": 15,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 66
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "proud-glance": {
+      "head": {
+        "x": 0,
+        "y": 30,
+        "z": -10
+      },
+      "eyes": {
+        "left": {
+          "width": 23,
+          "height": 42,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 23,
+          "height": 42,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 52
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      },
+      "colors": {
+        "body": "#3fb950"
+      }
+    },
+    "proud-joy": {
+      "head": {
+        "x": -12,
+        "y": 12,
+        "z": 11
+      },
+      "eyes": {
+        "left": {
+          "width": 30,
+          "height": 70,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 30,
+          "height": 70,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 62
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      },
+      "colors": {
+        "body": "#3fb950"
+      }
+    },
+    "proud-smile": {
+      "head": {
+        "x": -6,
+        "y": -8,
+        "z": -8
+      },
+      "eyes": {
+        "left": {
+          "width": 50,
+          "height": 15,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 50,
+          "height": 15,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 64
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      },
+      "colors": {
+        "body": "#3fb950"
+      }
+    },
+    "sleepy": {
+      "head": {
+        "x": 3,
+        "y": 12,
+        "z": 8
+      },
+      "eyes": {
+        "left": {
+          "width": 50,
+          "height": 12,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 50,
+          "height": 12,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 62
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      },
+      "colors": {
+        "body": "#3b6fb0"
+      }
+    },
+    "dozing": {
+      "head": {
+        "x": 10,
+        "y": 3,
+        "z": 7
+      },
+      "eyes": {
+        "left": {
+          "width": 52,
+          "height": 13,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 52,
+          "height": 13,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 64
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "slowDrift"
+      },
+      "colors": {
+        "body": "#3b6fb0"
+      }
+    }
+  },
+  "expressionOrder": [
+    "neutral",
+    "look-up",
+    "look-around",
+    "attentive",
+    "reading",
+    "soft-down",
+    "curious",
+    "thinking-left",
+    "thinking-up",
+    "thinking-side",
+    "focused",
+    "focused-right",
+    "joyful",
+    "joyful-tilt",
+    "playful",
+    "surprised",
+    "smile",
+    "proud-glance",
+    "proud-joy",
+    "proud-smile",
+    "sleepy",
+    "dozing"
+  ],
+  "animations": {
+    "idle": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "neutral",
+          "holdMs": 4200,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "look-up",
+          "holdMs": 3600,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "curious",
+          "holdMs": 3400,
+          "transitionMs": 520,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 2600,
+        "minIntervalMs": 3400,
+        "maxIntervalMs": 6200,
+        "durationMs": 260
+      },
+      "metadata": {
+        "label": "Idle",
+        "description": "Hero: calm glances while the visitor reads the intro.",
+        "group": "Portfolio"
+      }
+    },
+    "listening": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "attentive",
+          "holdMs": 2800,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "reading",
+          "holdMs": 3200,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "soft-down",
+          "holdMs": 2600,
+          "transitionMs": 520,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1800,
+        "minIntervalMs": 2800,
+        "maxIntervalMs": 5000,
+        "durationMs": 240
+      },
+      "metadata": {
+        "label": "Listening",
+        "description": "About: attentive and reading along.",
+        "group": "Portfolio"
+      }
+    },
+    "thinking": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "thinking-up",
+          "holdMs": 2600,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "thinking-left",
+          "holdMs": 2400,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "thinking-side",
+          "holdMs": 2400,
+          "transitionMs": 520,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1800,
+        "minIntervalMs": 2800,
+        "maxIntervalMs": 5000,
+        "durationMs": 240
+      },
+      "metadata": {
+        "label": "Thinking",
+        "description": "Skills: purple tint, weighing the stack.",
+        "group": "Portfolio"
+      }
+    },
+    "working": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "focused",
+          "holdMs": 2600,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "reading",
+          "holdMs": 2200,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "focused-right",
+          "holdMs": 2400,
+          "transitionMs": 520,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1800,
+        "minIntervalMs": 2800,
+        "maxIntervalMs": 5000,
+        "durationMs": 240
+      },
+      "metadata": {
+        "label": "Working",
+        "description": "Work: focused, heads down on production code.",
+        "group": "Portfolio"
+      }
+    },
+    "excited": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "joyful",
+          "holdMs": 2000,
+          "transitionMs": 420,
+          "transition": "spring"
+        },
+        {
+          "expression": "playful",
+          "holdMs": 1800,
+          "transitionMs": 420,
+          "transition": "spring"
+        },
+        {
+          "expression": "joyful-tilt",
+          "holdMs": 2000,
+          "transitionMs": 420,
+          "transition": "spring"
+        },
+        {
+          "expression": "surprised",
+          "holdMs": 1600,
+          "transitionMs": 320,
+          "transition": "snappy"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1200,
+        "minIntervalMs": 1800,
+        "maxIntervalMs": 3600,
+        "durationMs": 220
+      },
+      "metadata": {
+        "label": "Excited",
+        "description": "Projects: wide eyes over shipped work.",
+        "group": "Portfolio"
+      }
+    },
+    "proud": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "proud-glance",
+          "holdMs": 2400,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "proud-joy",
+          "holdMs": 2600,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "proud-smile",
+          "holdMs": 2400,
+          "transitionMs": 520,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 2600,
+        "minIntervalMs": 3400,
+        "maxIntervalMs": 6200,
+        "durationMs": 260
+      },
+      "metadata": {
+        "label": "Proud",
+        "description": "Credentials: green, quietly proud.",
+        "group": "Portfolio"
+      }
+    },
+    "happy": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "joyful-tilt",
+          "holdMs": 2400,
+          "transitionMs": 460,
+          "transition": "spring"
+        },
+        {
+          "expression": "smile",
+          "holdMs": 2200,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "joyful",
+          "holdMs": 2400,
+          "transitionMs": 460,
+          "transition": "spring"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1200,
+        "minIntervalMs": 1800,
+        "maxIntervalMs": 3600,
+        "durationMs": 220
+      },
+      "metadata": {
+        "label": "Happy",
+        "description": "Contact: warm and inviting.",
+        "group": "Portfolio"
+      }
+    },
+    "curious": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "surprised",
+          "holdMs": 1400,
+          "transitionMs": 300,
+          "transition": "snappy"
+        },
+        {
+          "expression": "look-around",
+          "holdMs": 1800,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "curious",
+          "holdMs": 1800,
+          "transitionMs": 520,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1200,
+        "minIntervalMs": 1800,
+        "maxIntervalMs": 3600,
+        "durationMs": 220
+      },
+      "metadata": {
+        "label": "Curious",
+        "description": "Hover: leans in to see what you are doing.",
+        "group": "Portfolio"
+      }
+    },
+    "celebrate": {
+      "playbackMode": "once",
+      "steps": [
+        {
+          "expression": "proud-joy",
+          "holdMs": 700,
+          "transitionMs": 300,
+          "transition": "spring"
+        },
+        {
+          "expression": "proud-smile",
+          "holdMs": 700,
+          "transitionMs": 260,
+          "transition": "snappy"
+        },
+        {
+          "expression": "proud-joy",
+          "holdMs": 800,
+          "transitionMs": 300,
+          "transition": "spring"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1200,
+        "minIntervalMs": 1800,
+        "maxIntervalMs": 3600,
+        "durationMs": 220
+      },
+      "metadata": {
+        "label": "Celebrate",
+        "description": "Click: a quick green celebration.",
+        "group": "Portfolio"
+      }
+    },
+    "drowsy": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "sleepy",
+          "holdMs": 3600,
+          "transitionMs": 900,
+          "transition": "smooth"
+        },
+        {
+          "expression": "dozing",
+          "holdMs": 4200,
+          "transitionMs": 900,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 4800,
+        "minIntervalMs": 6500,
+        "maxIntervalMs": 9500,
+        "durationMs": 420
+      },
+      "metadata": {
+        "label": "Drowsy",
+        "description": "No activity for a while: dozes off until you scroll.",
+        "group": "Portfolio"
+      }
+    }
+  },
+  "animationOrder": [
+    "idle",
+    "listening",
+    "thinking",
+    "working",
+    "excited",
+    "proud",
+    "happy",
+    "curious",
+    "celebrate",
+    "drowsy"
+  ]
+}

@@ -524,12 +524,17 @@ h3 {
   color: var(--green);
 }
 
+.profile-photo-wrap {
+  position: relative;
+  width: 172px;
+  margin: 10px auto 0;
+}
+
 .profile-photo-frame {
   position: relative;
   overflow: hidden;
-  width: 172px;
+  width: 100%;
   aspect-ratio: 1;
-  margin: 10px auto 0;
   border: 1px solid rgba(63, 185, 80, 0.22);
   border-radius: 50%;
   background: #0d1117;
@@ -566,6 +571,190 @@ h3 {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(88, 166, 255, 0.9), transparent);
   animation: rn-scan 4.2s ease-in-out infinite;
+}
+
+/* Nano: status badge on the profile photo, GitHub style. */
+.nano-badge {
+  position: absolute;
+  right: -10px;
+  bottom: -4px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px) scale(0.6);
+  transition: opacity 0.6s ease 0.5s, transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.45));
+}
+
+.nano-badge.is-ready {
+  opacity: 1;
+  transform: none;
+}
+
+.nano-badge::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 22px;
+  background: var(--bg);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+
+.nano-badge .nano-avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nano-badge:hover .nano-avatar {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.nano-badge:focus-visible,
+.nano-companion-button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+  border-radius: 18px;
+}
+
+/* Nano: floating companion that reacts to the section in view. */
+.nano-companion {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.nano-companion-button {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nano-glow {
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 64%;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--nano-glow);
+  opacity: 0.32;
+  filter: blur(10px);
+  transform: translateX(-50%);
+  transition: background 0.9s ease;
+  animation: nano-shadow 4.2s ease-in-out infinite;
+}
+
+.nano-float {
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation: nano-float 4.2s ease-in-out infinite;
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.5));
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nano-float .nano-avatar {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nano-companion-button:hover .nano-avatar {
+  transform: scale(1.06);
+}
+
+.nano-companion-button:active .nano-avatar {
+  transform: scale(0.94);
+}
+
+.nano-bubble {
+  position: relative;
+  max-width: 230px;
+  margin-right: 10px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 12px 12px 4px 12px;
+  color: rgba(240, 246, 252, 0.88);
+  background: rgba(15, 20, 27, 0.94);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  transform-origin: bottom right;
+}
+
+.nano-bubble::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  border: 1px solid var(--nano-glow);
+  opacity: 0.35;
+  pointer-events: none;
+  transition: border-color 0.9s ease;
+}
+
+@keyframes nano-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes nano-shadow {
+  0%,
+  100% {
+    opacity: 0.32;
+    transform: translateX(-50%) scaleX(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: translateX(-50%) scaleX(0.82);
+  }
+}
+
+.site-credit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 22px;
+  color: var(--muted-2);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.site-credit a {
+  color: var(--muted);
+  transition: color 0.25s ease;
+}
+
+.site-credit a:hover {
+  color: var(--blue);
 }
 
 @keyframes rn-pulse {
@@ -1135,8 +1324,23 @@ h3 {
     width: 100%;
   }
 
-  .profile-photo-frame {
+  .profile-photo-wrap {
     width: 154px;
+  }
+
+  .nano-badge {
+    width: 58px;
+    height: 58px;
+  }
+
+  .nano-companion-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nano-bubble {
+    max-width: 200px;
+    font-size: 0.78rem;
   }
 
   .section-header {

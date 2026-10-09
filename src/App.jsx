@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { AmbientBackground } from "./components/AmbientBackground";
+import { NanoCompanion } from "./components/NanoCompanion";
 import { Navigation } from "./components/Navigation";
 import { ScrollProgress } from "./components/ScrollProgress";
 import { TypewriterLoader } from "./components/TypewriterLoader";
@@ -46,6 +47,7 @@ export default function App() {
           <Credentials ready={introReady} />
           <Contact ready={introReady} />
         </main>
+        <NanoCompanion ready={introReady} />
       </div>
       <Analytics />
       <SpeedInsights />

@@ -33,6 +33,20 @@ src/
   styles.css    Theme, layout, responsive rules, and visual effects
 ```
 
+## Avatar
+
+Nano is the site mascot: a small blue squircle with expressive eyes. It is built with the `@bible-strong/avatar-react` and `@bible-strong/avatar-core` packages from [Bible Strong Avatar Lab](https://github.com/smontlouis/bible-strong-avatar-lab) by smontlouis, which are licensed under AGPL-3.0.
+
+- `scripts/build-avatar.mjs` generates the avatar definition in `src/data/nano.avatar.json`.
+- `scripts/build-icons.mjs` renders the favicon, Apple touch icon, and Open Graph card into `public/` from that definition. It uses a local Google Chrome install in headless mode to rasterise the PNGs.
+
+Regenerate the avatar and icons:
+
+```sh
+node scripts/build-avatar.mjs
+node scripts/build-icons.mjs
+```
+
 ## Local Development
 
 ```sh
@@ -71,3 +85,9 @@ CI/CD is implemented for this project.
 - Framework: Vite
 - Build command: `npm run build`
 - Output directory: `dist`
+
+## License
+
+Copyright (C) 2026 Rajat Nanavati.
+
+This portfolio is licensed under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0-only) because it ships AGPL-3.0 components from Bible Strong Avatar Lab.
