@@ -22,7 +22,13 @@ export function Projects({ ready }) {
                 ready={ready}
                 variant={index % 2 === 0 ? "slideLeft" : "slideRight"}
               >
-                <a href={project.href} target="_blank" rel="noreferrer">
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-nano={project.nano}
+                  data-nano-mood="excited"
+                >
                   <div className="project-head">
                     <h3>{project.title}</h3>
                     <ExternalLink size={18} aria-hidden="true" />

@@ -27,7 +27,13 @@ export function Skills({ ready }) {
               <h3>{group.title}</h3>
               <div className="chip-list">
                 {group.items.map((skill) => (
-                  <span key={skill}>{skill}</span>
+                  <span
+                    key={skill}
+                    data-nano={group.chipLines?.[skill] ?? group.nano?.line}
+                    data-nano-mood={group.nano?.mood}
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </Reveal>

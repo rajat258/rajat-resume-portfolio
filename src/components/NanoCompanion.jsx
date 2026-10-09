@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ease } from "../config/animations";
 import { nanoContent } from "../data/resume";
+import { useNanoReactions } from "./useNanoReactions";
 
 const NanoAvatar = lazy(() => import("./NanoAvatar"));
 
@@ -71,6 +72,7 @@ function useDrowsy(delay) {
 export function NanoCompanion({ ready }) {
   const { active, heroVisible } = useActiveSection();
   const asleep = useDrowsy(nanoContent.sleepAfterMs);
+  const reaction = useNanoReactions();
   const [hovering, setHovering] = useState(false);
   const [celebrating, setCelebrating] = useState(false);
   const [line, setLine] = useState(null);
@@ -79,7 +81,11 @@ export function NanoCompanion({ ready }) {
 
   const shown = ready && !heroVisible;
   const section = sections.find(({ id }) => id === active) ?? sections[0];
-  const mood = asleep ? "drowsy" : celebrating ? "celebrate" : hovering ? "curious" : section.mood;
+  const mood = asleep
+    ? "drowsy"
+    : celebrating
+      ? "celebrate"
+      : reaction?.mood || (hovering ? "curious" : section.mood);
 
   function say(text, ms = LINE_MS) {
     window.clearTimeout(lineTimer.current);
@@ -92,6 +98,13 @@ export function NanoCompanion({ ready }) {
   useEffect(() => {
     if (shown && section.line) say(section.line);
   }, [shown, section]);
+
+  const shownRef = useRef(shown);
+  shownRef.current = shown;
+
+  useEffect(() => {
+    if (shownRef.current && reaction?.line) say(reaction.line);
+  }, [reaction]);
 
   useEffect(() => {
     if (asleep) {

@@ -678,6 +678,125 @@
       "colors": {
         "body": "#3b6fb0"
       }
+    },
+    "asleep": {
+      "head": {
+        "x": 6,
+        "y": 4,
+        "z": 10
+      },
+      "eyes": {
+        "left": {
+          "width": 50,
+          "height": 10,
+          "x": 0,
+          "y": 6,
+          "angle": 0
+        },
+        "right": {
+          "width": 50,
+          "height": 10,
+          "x": 0,
+          "y": 6,
+          "angle": 0
+        },
+        "spacing": 62
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "slowDrift"
+      },
+      "colors": {
+        "body": "#3b6fb0"
+      }
+    },
+    "skeptical": {
+      "head": {
+        "x": 4,
+        "y": -8,
+        "z": 10
+      },
+      "eyes": {
+        "left": {
+          "width": 24,
+          "height": 56,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 48,
+          "height": 13,
+          "x": 0,
+          "y": -6,
+          "angle": 0
+        },
+        "spacing": 60
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
+    },
+    "confused-tilt": {
+      "head": {
+        "x": -8,
+        "y": 12,
+        "z": -14
+      },
+      "eyes": {
+        "left": {
+          "width": 42,
+          "height": 42,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 22,
+          "height": 22,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 60
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "shake",
+        "body": "none"
+      }
+    },
+    "playful-wink": {
+      "head": {
+        "x": -10,
+        "y": -12,
+        "z": 10
+      },
+      "eyes": {
+        "left": {
+          "width": 30,
+          "height": 70,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "right": {
+          "width": 48,
+          "height": 13,
+          "x": 0,
+          "y": 0,
+          "angle": 0
+        },
+        "spacing": 62
+      },
+      "perspective": 1,
+      "motion": {
+        "eyes": "none",
+        "body": "none"
+      }
     }
   },
   "expressionOrder": [
@@ -702,7 +821,11 @@
     "proud-joy",
     "proud-smile",
     "sleepy",
-    "dozing"
+    "dozing",
+    "asleep",
+    "skeptical",
+    "confused-tilt",
+    "playful-wink"
   ],
   "animations": {
     "idle": {
@@ -1026,6 +1149,146 @@
         "group": "Portfolio"
       }
     },
+    "sleeping": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "asleep",
+          "holdMs": 3200,
+          "transitionMs": 900,
+          "transition": "smooth"
+        },
+        {
+          "expression": "dozing",
+          "holdMs": 3200,
+          "transitionMs": 900,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": false,
+        "initialDelayMs": 4800,
+        "minIntervalMs": 6500,
+        "maxIntervalMs": 9500,
+        "durationMs": 420
+      },
+      "metadata": {
+        "label": "Sleeping",
+        "description": "Hero: asleep until the intro finishes.",
+        "group": "Portfolio"
+      }
+    },
+    "waking": {
+      "playbackMode": "once",
+      "steps": [
+        {
+          "expression": "asleep",
+          "holdMs": 400,
+          "transitionMs": 520,
+          "transition": "smooth"
+        },
+        {
+          "expression": "sleepy",
+          "holdMs": 500,
+          "transitionMs": 420,
+          "transition": "smooth"
+        },
+        {
+          "expression": "surprised",
+          "holdMs": 600,
+          "transitionMs": 260,
+          "transition": "snappy"
+        },
+        {
+          "expression": "joyful",
+          "holdMs": 900,
+          "transitionMs": 360,
+          "transition": "spring"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1200,
+        "minIntervalMs": 1800,
+        "maxIntervalMs": 3600,
+        "durationMs": 220
+      },
+      "metadata": {
+        "label": "Waking",
+        "description": "Hero: wakes up when the page is ready.",
+        "group": "Portfolio"
+      }
+    },
+    "confused": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "skeptical",
+          "holdMs": 1600,
+          "transitionMs": 300,
+          "transition": "snappy"
+        },
+        {
+          "expression": "confused-tilt",
+          "holdMs": 1600,
+          "transitionMs": 380,
+          "transition": "spring"
+        },
+        {
+          "expression": "curious",
+          "holdMs": 1500,
+          "transitionMs": 520,
+          "transition": "smooth"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1800,
+        "minIntervalMs": 2800,
+        "maxIntervalMs": 5000,
+        "durationMs": 240
+      },
+      "metadata": {
+        "label": "Confused",
+        "description": "Form: something does not look right.",
+        "group": "Portfolio"
+      }
+    },
+    "playful": {
+      "playbackMode": "loop",
+      "steps": [
+        {
+          "expression": "playful-wink",
+          "holdMs": 1500,
+          "transitionMs": 360,
+          "transition": "spring"
+        },
+        {
+          "expression": "playful",
+          "holdMs": 1500,
+          "transitionMs": 360,
+          "transition": "spring"
+        },
+        {
+          "expression": "joyful-tilt",
+          "holdMs": 1600,
+          "transitionMs": 360,
+          "transition": "spring"
+        }
+      ],
+      "blink": {
+        "enabled": true,
+        "initialDelayMs": 1200,
+        "minIntervalMs": 1800,
+        "maxIntervalMs": 3600,
+        "durationMs": 220
+      },
+      "metadata": {
+        "label": "Playful",
+        "description": "Hover: AI tools and fun bits.",
+        "group": "Portfolio"
+      }
+    },
     "drowsy": {
       "playbackMode": "loop",
       "steps": [
@@ -1066,6 +1329,10 @@
     "happy",
     "curious",
     "celebrate",
+    "sleeping",
+    "waking",
+    "confused",
+    "playful",
     "drowsy"
   ]
 }

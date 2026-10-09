@@ -52,6 +52,10 @@ const expressions = {
   "proud-smile": expression({ x: -6, y: -8, z: -8 }, eye(50, 15), eye(50, 15), 64, { colors: { body: GREEN } }),
   sleepy: expression({ x: 3, y: 12, z: 8 }, eye(50, 12), eye(50, 12), 62, { colors: { body: DIM } }),
   dozing: expression({ x: 10, y: 3, z: 7 }, eye(52, 13), eye(52, 13), 64, { motion: { eyes: "none", body: "slowDrift" }, colors: { body: DIM } }),
+  asleep: expression({ x: 6, y: 4, z: 10 }, eye(50, 10, { y: 6 }), eye(50, 10, { y: 6 }), 62, { motion: { eyes: "none", body: "slowDrift" }, colors: { body: DIM } }),
+  skeptical: expression({ x: 4, y: -8, z: 10 }, eye(24, 56), eye(48, 13, { y: -6 }), 60),
+  "confused-tilt": expression({ x: -8, y: 12, z: -14 }, eye(42, 42), eye(22, 22), 60, { motion: { eyes: "shake", body: "none" } }),
+  "playful-wink": expression({ x: -10, y: -12, z: 10 }, eye(30, 70), eye(48, 13), 62),
 };
 
 const blinks = {
@@ -80,6 +84,10 @@ const animations = {
   happy: animation("Happy", "Contact: warm and inviting.", [step("joyful-tilt", 2400, "spring", 460), step("smile", 2200), step("joyful", 2400, "spring", 460)], blinks.lively),
   curious: animation("Curious", "Hover: leans in to see what you are doing.", [step("surprised", 1400, "snappy", 300), step("look-around", 1800), step("curious", 1800)], blinks.lively),
   celebrate: animation("Celebrate", "Click: a quick green celebration.", [step("proud-joy", 700, "spring", 300), step("proud-smile", 700, "snappy", 260), step("proud-joy", 800, "spring", 300)], blinks.lively, "once"),
+  sleeping: animation("Sleeping", "Hero: asleep until the intro finishes.", [step("asleep", 3200, "smooth", 900), step("dozing", 3200, "smooth", 900)], { ...blinks.slow, enabled: false }),
+  waking: animation("Waking", "Hero: wakes up when the page is ready.", [step("asleep", 400), step("sleepy", 500, "smooth", 420), step("surprised", 600, "snappy", 260), step("joyful", 900, "spring", 360)], blinks.lively, "once"),
+  confused: animation("Confused", "Form: something does not look right.", [step("skeptical", 1600, "snappy", 300), step("confused-tilt", 1600, "spring", 380), step("curious", 1500)], blinks.alert),
+  playful: animation("Playful", "Hover: AI tools and fun bits.", [step("playful-wink", 1500, "spring", 360), step("playful", 1500, "spring", 360), step("joyful-tilt", 1600, "spring", 360)], blinks.lively),
   drowsy: animation("Drowsy", "No activity for a while: dozes off until you scroll.", [step("sleepy", 3600, "smooth", 900), step("dozing", 4200, "smooth", 900)], blinks.slow),
 };
 

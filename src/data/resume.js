@@ -16,7 +16,7 @@ export const profile = {
   headline:
     "README.md - building scalable cross-platform apps for healthcare, retail, HRTech, and creator platforms.",
   summary:
-    "Results-driven React Native Developer with 3.5+ years of experience building scalable cross-platform mobile applications across healthcare, retail, HRTech, and creator economy domains. Strong expertise in React Native architecture, Redux ecosystem, mobile performance optimization, and API integrations.",
+    "Results-driven React Native Developer with 5+ years of experience building scalable cross-platform mobile applications across healthcare, retail, HRTech, and creator economy domains. Strong expertise in React Native architecture, Redux ecosystem, mobile performance optimization, and API integrations.",
 };
 
 export const navItems = [
@@ -72,6 +72,11 @@ export const heroContent = {
   downloadLabel: "Download Resume",
   contactLabel: "Contact Me",
   projectsLabel: "View Projects",
+  nano: {
+    download: "Good call! Grab the resume.",
+    contact: "Say hi! Rajat would love to hear from you.",
+    projects: "Ooh, let me show you the projects!",
+  },
 };
 
 export const nanoContent = {
@@ -86,9 +91,10 @@ export const nanoContent = {
     { id: "work", mood: "working", line: "Heads down, shipping production apps." },
     { id: "projects", mood: "excited", line: "Ooh, these are my favourites!" },
     { id: "credentials", mood: "proud", line: "AWS certified. Small flex." },
-    { id: "contact", mood: "happy", line: "Say hi! Rajat replies fast." },
+    { id: "contact", mood: "happy", line: "Say hi! The form is right here." },
   ],
   hoverLine: "Psst, click me.",
+  helloLine: "Oh, hi! I'm Nano.",
   wakeLine: "Oh! I'm up, I'm up.",
   sleepLine: "Zzz...",
   celebrateLine: "Let's build something together!",
@@ -102,7 +108,7 @@ export const nanoContent = {
 };
 
 export const stats = [
-  { value: "3.5+", label: "Years" },
+  { value: "5+", label: "Years" },
   { value: "4", label: "Domains" },
   { value: "AWS", label: "Certified" },
 ];
@@ -111,11 +117,21 @@ export const skillGroups = [
   {
     title: "Mobile Development",
     icon: "code",
+    nano: { line: "Phones are home turf. iOS and Android both.", mood: "excited" },
+    chipLines: {
+      "React Native": "React Native? 5+ years of it.",
+      TypeScript: "He pairs TypeScript with React Native.",
+    },
     items: ["React Native", "TypeScript", "JavaScript", "Android", "iOS"],
   },
   {
     title: "Frontend Architecture",
     icon: "briefcase",
+    nano: { line: "Hmm, state, hooks and clean structure.", mood: "thinking" },
+    chipLines: {
+      "Redux Toolkit": "Redux Toolkit, used to keep apps scalable.",
+      "Framer Motion": "Framer Motion animates this very site.",
+    },
     items: [
       "React",
       "React Hooks",
@@ -131,11 +147,22 @@ export const skillGroups = [
   {
     title: "Backend & Cloud",
     icon: "cloud",
+    nano: { line: "APIs, Firebase and AWS, all wired up.", mood: "thinking" },
+    chipLines: {
+      AWS: "AWS Certified Cloud Practitioner, yes!",
+      Firebase: "Firebase powers the chat in his movie app.",
+      "Realtime workflows": "Realtime chat? He built it for CarePorch.",
+    },
     items: ["AWS", "REST APIs", "Firebase", "Realtime workflows", "Vercel", "GitHub Pages"],
   },
   {
     title: "Tools",
     icon: "terminal",
+    nano: { line: "The daily toolbox. Let's get to work.", mood: "working" },
+    chipLines: {
+      "GitHub Actions": "GitHub Actions runs his CI and deploys.",
+      Xcode: "Xcode for iOS, Android Studio for Android.",
+    },
     items: [
       "Git",
       "GitHub",
@@ -150,11 +177,21 @@ export const skillGroups = [
   {
     title: "Programming",
     icon: "terminal",
+    nano: { line: "Beyond mobile, a few more languages.", mood: "thinking" },
+    chipLines: {
+      Python: "Python, with NumPy and Pandas too.",
+      "C++": "C++! Old school and still fun.",
+    },
     items: ["Python", "C", "C++", "HTML", "CSS", "CSS Modules", "NumPy", "Pandas"],
   },
   {
     title: "AI Tools",
     icon: "sparkles",
+    nano: { line: "AI helpers! Rajat keeps a few handy.", mood: "playful" },
+    chipLines: {
+      "Claude Code": "Claude Code? Hey, that's a friend.",
+      Cursor: "Cursor, another trusty sidekick.",
+    },
     items: [
       "Claude",
       "Claude Code",
@@ -215,6 +252,7 @@ export const projectGroups = [
     items: [
       {
         title: "CarePorch",
+        nano: "Real time chat plus Google Calendar visits!",
         href: "https://careporch.org/",
         meta: "React Native / Expo / Caregiving Platform / Ongoing",
         description:
@@ -222,6 +260,7 @@ export const projectGroups = [
       },
       {
         title: "POPProbe",
+        nano: "Retail workflows across 3+ continents!",
         href: "https://www.popprobe.com/",
         meta: "React Native / SaaS Platform / Ongoing",
         description:
@@ -229,6 +268,7 @@ export const projectGroups = [
       },
       {
         title: "Glip",
+        nano: "Medication tracking with predictive reminders.",
         href: "https://github.com/rajat258/glip-mobile",
         meta: "React Native / Healthcare / 2026",
         description:
@@ -236,6 +276,7 @@ export const projectGroups = [
       },
       {
         title: "AttLed",
+        nano: "Attendance, payroll and more. HRTech!",
         href: "https://attled.com/",
         meta: "React Native / HRTech / 2024-25",
         description:
@@ -243,6 +284,7 @@ export const projectGroups = [
       },
       {
         title: "Sandwych",
+        nano: "Care coordination for healthcare teams.",
         href: "https://sandwych.com/",
         meta: "Healthcare Platform / 2025",
         description:
@@ -250,6 +292,7 @@ export const projectGroups = [
       },
       {
         title: "Mita",
+        nano: "Creator analytics with dynamic charts!",
         href: "https://github.com/rajat258/mita",
         meta: "Creator Economy Platform / Prototype",
         description:
@@ -257,6 +300,7 @@ export const projectGroups = [
       },
       {
         title: "rn-MovieDB",
+        nano: "Movies, trailers and Firebase chat. Fun!",
         href: "https://github.com/rajat258/rn-movieDB",
         meta: "React Native / Firebase / Personal Project",
         description:
@@ -264,6 +308,7 @@ export const projectGroups = [
       },
       {
         title: "rn-groot",
+        nano: "A test bench for custom native modules.",
         href: "https://github.com/rajat258/rn-groot",
         meta: "React Native Testing Platform / Personal Project",
         description:
@@ -276,6 +321,7 @@ export const projectGroups = [
     items: [
       {
         title: "ATC Group Website",
+        nano: "A live site for an industrial packaging maker.",
         href: "https://akshaytradingco.in/",
         meta: "React / TypeScript / Vite / GitHub Pages",
         description:
@@ -283,6 +329,7 @@ export const projectGroups = [
       },
       {
         title: "Rajat Nanavati Portfolio",
+        nano: "Hey, that's this site! I live here.",
         href: "https://github.com/rajat258/rajat-resume-portfolio",
         meta: "React / Vite / Framer Motion / CI-CD",
         description:
@@ -310,3 +357,37 @@ export const contributionCells = [
   3, 2, 0, 4, 1, 3, 2, 4, 0, 1, 3, 2, 4, 1, 0, 2, 3, 4, 2, 1,
   0, 3, 4, 2, 1, 2, 4, 3, 0, 1, 2, 3, 4, 0, 1, 3, 2, 4, 1, 0,
 ];
+
+export const sayHiContent = {
+  kicker: "Or just say hi",
+  intro: "Leave a note here. It goes straight to Rajat's inbox.",
+  endpoint: "https://formsubmit.co/ajax/rajatnanavati258@gmail.com",
+  subject: "New message from rajatnanavati.vercel.app",
+  template: "table",
+  emailLabel: "Your email",
+  emailPlaceholder: "you@company.com",
+  messageLabel: "Message",
+  messagePlaceholder: "Tell Rajat a little about what you're building",
+  submitLabel: "Send message",
+  sendingLabel: "Sending...",
+  errors: {
+    emailInvalid: "That email doesn't look quite right.",
+    messageEmpty: "Please add a short message.",
+    send: "Couldn't send that one. Please try again, or use the email link above.",
+  },
+  success: "Thanks! Your message is on its way to Rajat.",
+  nano: {
+    emailInvalid: "Hmm, that email looks a little off.",
+    messageEmpty: "Add a short message for Rajat?",
+    sending: "Sending it over to Rajat...",
+    success: "Sent! It's in Rajat's inbox now.",
+    error: "Oops. Try the email link above?",
+  },
+  links: {
+    phone: "Rather talk? Give Rajat a call.",
+    email: "Straight to Rajat's inbox!",
+    linkedin: "Let's connect on LinkedIn!",
+    github: "Peek at the code Rajat ships.",
+    medium: "Here's Rajat on Medium.",
+  },
+};
